@@ -1,145 +1,145 @@
 <p align="center">
- <h2 align="center">GitHub Readme Stats</h2>
- <p align="center">Get dynamically generated GitHub stats on your readmes!</p>
+ <h2 align="center">Estadísticas Léame de GitHub</h2>
+ <p align="center">¡Obtenga estadísticas de GitHub generadas dinámicamente en sus archivos Léame!</p>
 
 # GitHub Stats Card
 
-Copy-paste this into your markdown content, and that's it. Simple!
+Copie y pegue esto en su contenido de rebajas, y eso es todo. ¡Sencillo!
 
-Change the `?username=` value to your GitHub's username.
+Cambiar el `?username=` valor al nombre de usuario de tu GitHub.
 
 ```md
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=SrGobi)](https://github.com/SrGobi/github-readme-stats)
 ```
 
-_Note: Available ranks are S+ (top 1%), S (top 25%), A++ (top 45%), A+ (top 60%), and B+ (everyone).
-The values are calculated by using the [cumulative distribution function](https://en.wikipedia.org/wiki/Cumulative_distribution_function) using commits, contributions, issues, stars, pull requests, followers, and owned repositories.
-The implementation is can be investigated at [src/calculateRank.js](./src/calculateRank.js)_
+_Nota: Los rangos disponibles son S + (1% superior), S (25% superior), A ++ (45% superior), A + (60% superior) y B + (todos).
+Los valores se calculan utilizando el [cumulative distribution function](https://en.wikipedia.org/wiki/Cumulative_distribution_function) utilizando confirmaciones, contribuciones, problemas, estrellas, solicitudes de extracción, seguidores y repositorios propios.
+La implementación se puede investigar en [src/calculateRank.js](./src/calculateRank.js)_
 
-### Hiding individual stats
+### Ocultar estadísticas individuales
 
-To hide any specific stats, you can pass a query parameter `?hide=` with comma-separated values.
+Para ocultar estadísticas específicas, puede pasar un parámetro de consulta `?hide=` con valores separados por comas.
 
-> Options: `&hide=stars,commits,prs,issues,contribs`
-
-```md
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=SrGobi&hide=contribs,prs)
-```
-
-### Adding private contributions count to total commits count
-
-You can add the count of all your private contributions to the total commits count by using the query parameter `?count_private=true`.
-
-_Note: If you are deploying this project yourself, the private contributions will be counted by default otherwise you need to chose to share your private contribution counts._
-
-> Options: `&count_private=true`
+> Opciones: `&hide=stars,commits,prs,issues,contribs`
 
 ```md
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=SrGobi&count_private=true)
+![SrGobi GitHub stats](https://github-readme-stats.vercel.app/api?username=SrGobi&hide=contribs,prs)
 ```
 
-### Showing icons
+### Agregar el recuento de contribuciones privadas al recuento total de confirmaciones
 
-To enable icons, you can pass `show_icons=true` in the query param, like so:
+Puede agregar el recuento de todas sus contribuciones privadas al recuento total de confirmaciones utilizando el parámetro de consulta `?count_private=true`.
+
+_Nota: Si está implementando este proyecto usted mismo, las contribuciones privadas se contarán de forma predeterminada; de lo contrario, debe elegir compartir sus recuentos de contribuciones privadas._
+
+> Opciones: `&count_private=true`
 
 ```md
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=SrGobi&show_icons=true)
+![SrGobi GitHub stats](https://github-readme-stats.vercel.app/api?username=SrGobi&count_private=true)
 ```
 
-### Themes
+### Mostrando iconos
 
-With inbuilt themes, you can customize the look of the card without doing any [manual customization](#customization).
-
-Use `?theme=THEME_NAME` parameter like so :-
+Para habilitar iconos, puede pasar `show_icons = true` en el parámetro de consulta, así:
 
 ```md
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=SrGobi&show_icons=true&theme=radical)
+![SrGobi GitHub stats](https://github-readme-stats.vercel.app/api?username=SrGobi&show_icons=true)
 ```
 
-#### All inbuilt themes :-
+### Temas
+
+Con temas incorporados, puede personalizar el aspecto de la tarjeta sin hacer nada [manual customization](#personalización).
+
+Usa `?theme=THEME_NAME` parámetro así :-
+
+```md
+![SrGobi GitHub stats](https://github-readme-stats.vercel.app/api?username=SrGobi&show_icons=true&theme=radical)
+```
+
+#### Todos los temas incorporados :-
 
 dark, radical, merko, gruvbox, tokyonight, onedark, cobalt, synthwave, highcontrast, dracula
 
 <img src="https://res.cloudinary.com/SrGobi/image/upload/v1595174536/grs-themes_l4ynja.png" alt="GitHub Readme Stats Themes" width="600px"/>
 
-You can look at a preview for [all available themes](./themes/README.md) or checkout the [theme config file](./themes/index.js) & **you can also contribute new themes** if you like :D
+Puede ver una vista previa de [all available themes](./themes/README.md) o echa un vistazo al [theme config file](./themes/index.js) & **también puedes contribuir con nuevos temas** si quieres :D
 
-### Customization
+### Personalización
 
-You can customize the appearance of your `Stats Card` or `Repo Card` however you want with URL params.
+Puede personalizar la apariencia de su `Stats Card` or `Repo Card` como quieras con los parámetros de URL.
 
-#### Common Options:
+#### Opciones comunes:
 
-- `title_color` - Card's title color _(hex color)_
-- `text_color` - Body text color _(hex color)_
-- `icon_color` - Icons color if available _(hex color)_
-- `bg_color` - Card's background color _(hex color)_ **or** a gradient in the form of _angle,start,end_
-- `hide_border` - Hides the card's border _(boolean)_
-- `theme` - name of the theme, choose from [all available themes](./themes/README.md)
-- `cache_seconds` - set the cache header manually _(min: 1800, max: 86400)_
-- `locale` - set the language in the card _(e.g. cn, de, es, etc.)_
+- `title_color` - Color del título de la tarjeta _(hex color)_
+- `text_color` - Color del texto del cuerpo _(hex color)_
+- `icon_color` - Color de los iconos si está disponible _(hex color)_
+- `bg_color` - Color de fondo de la tarjeta _(hex color)_ **o** un degradado en forma de _angle,start,end_
+- `hide_border` - Oculta el borde de la tarjeta _(boolean)_
+- `theme` - nombre del tema, elija entre [all available themes](./themes/README.md)
+- `cache_seconds` - configurar el encabezado de la caché manualmente _(min: 1800, max: 86400)_
+- `locale` - configurar el idioma en la tarjeta _(e.g. cn, de, es, etc.)_
 
-##### Gradient in bg_color
+##### Degradado en bg_color
 
-You can provide multiple comma-separated values in bg_color option to render a gradient, the format of the gradient is :-
+Puede proporcionar varios valores separados por comas en la opción bg_color para representar un degradado, el formato del degradado es :-
 
 ```
 &bg_color=DEG,COLOR1,COLOR2,COLOR3...COLOR10
 ```
 
-> Note on cache: Repo cards have a default cache of 4 hours (14400 seconds) if the fork count & star count is less than 1k, otherwise, it's 2 hours (7200 seconds). Also, note that the cache is clamped to a minimum of 2 hours and a maximum of 24 hours
+> Nota sobre el caché: las tarjetas Repo tienen un caché predeterminado de 4 horas (14400 segundos) si el recuento de bifurcaciones y el recuento de estrellas es inferior a 1k; de lo contrario, son 2 horas (7200 segundos). Además, tenga en cuenta que la caché está sujeta a un mínimo de 2 horas y un máximo de 24 horas.
 
-#### Stats Card Exclusive Options:
+#### Opciones exclusivas de la tarjeta de estadísticas:
 
-- `hide` - Hides the specified items from stats _(Comma-separated values)_
+- `hide` - Oculta los elementos especificados de las estadísticas _(Comma-separated values)_
 - `hide_title` - _(boolean)_
-- `hide_rank` - _(boolean)_ hides the rank and automatically resizes the card width
+- `hide_rank` - _(boolean)_ oculta el rango y cambia automáticamente el tamaño del ancho de la tarjeta
 - `show_icons` - _(boolean)_
-- `include_all_commits` - Count total commits instead of just the current year commits _(boolean)_
-- `count_private` - Count private commits _(boolean)_
-- `line_height` - Sets the line-height between text _(number)_
-- `custom_title` - Sets a custom title for the card
-- `disable_animations` - Disables all animations in the card _(boolean)_
+- `include_all_commits` - Cuente las confirmaciones totales en lugar de solo las confirmaciones del año actual _(boolean)_
+- `count_private` - Contar confirmaciones privadas _(boolean)_
+- `line_height` - Establece la altura de la línea entre el texto. _(number)_
+- `custom_title` - Establece un título personalizado para la tarjeta
+- `disable_animations` - Desactiva todas las animaciones de la tarjeta. _(boolean)_
 
-#### Repo Card Exclusive Options:
+#### Opciones exclusivas de la tarjeta Repo:
 
-- `show_owner` - Show the owner name of the repo _(boolean)_
+- `show_owner` - Muestra el nombre del propietario del repositorio _(boolean)_
 
-#### Language Card Exclusive Options:
+#### Opciones exclusivas de la tarjeta de idioma:
 
-- `hide` - Hide the languages specified from the card _(Comma-separated values)_
+- `hide` - Ocultar los idiomas especificados de la tarjeta _(Comma-separated values)_
 - `hide_title` - _(boolean)_
-- `layout` - Switch between two available layouts `default` & `compact`
-- `card_width` - Set the card's width manually _(number)_
-- `langs_count` - Show more languages on the card, between 1-10, defaults to 5 _(number)_
-- `exclude_repo` - Exclude specified repositories _(Comma-separated values)_
-- `custom_title` - Sets a custom title for the card
+- `layout` - Cambiar entre dos diseños disponibles `predeterminado` y `compacto`
+- `card_width` - Establecer el ancho de la tarjeta manualmente _(number)_
+- `langs_count` - Mostrar más idiomas en la tarjeta, entre 1 y 10, el valor predeterminado es 5 _(number)_
+- `exclude_repo` - Excluir repositorios especificados _(Comma-separated values)_
+- `custom_title` - Establece un título personalizado para la tarjeta
 
-> :warning: **Important:**
-> Language names should be uri-escaped, as specified in [Percent Encoding](https://en.wikipedia.org/wiki/Percent-encoding)
-> (i.e: `c++` should become `c%2B%2B`, `jupyter notebook` should become `jupyter%20notebook`, etc.) You can use
-> [urlencoder.org](https://www.urlencoder.org/) to help you do this automatically.
+> :warning: **Importante:**
+> Los nombres de los idiomas deben tener un escape de uri, como se especifica en [Percent Encoding](https://en.wikipedia.org/wiki/Percent-encoding)
+> (i.e: `c++` debe convertirse `c%2B%2B`, `jupyter notebook` debería convertirse `jupyter%20notebook`, etc.) Puedes usar
+> [urlencoder.org](https://www.urlencoder.org/) para ayudarlo a hacer esto automáticamente.
 
-#### Wakatime Card Exclusive Options:
+#### Opciones exclusivas de la tarjeta Wakatime:
 
 - `hide_title` - _(boolean)_
-- `line_height` - Sets the line-height between text _(number)_
-- `hide_progress` - Hides the progress bar and percentage _(boolean)_
-- `custom_title` - Sets a custom title for the card
-- `layout` - Switch between two available layouts `default` & `compact`
-- `api_domain` - Set a custom api domain for the card
+- `line_height` - Establece la altura de la línea entre el texto. _(number)_
+- `hide_progress` - Oculta la barra de progreso y el porcentaje _(boolean)_
+- `custom_title` - Establece un título personalizado para la tarjeta
+- `layout` - Cambiar entre dos diseños disponibles `predeterminado` y` compacto`
+- `api_domain` - Establecer un dominio de API personalizado para la tarjeta
 
 ---
 
-# GitHub Extra Pins
+# Pines adicionales de GitHub
 
-GitHub extra pins allow you to pin more than 6 repositories in your profile using a GitHub readme profile.
+Los pines adicionales de GitHub le permiten anclar más de 6 repositorios en su perfil usando un perfil Léame de GitHub.
 
-Yay! You are no longer limited to 6 pinned repositories.
+¡Hurra! Ya no está limitado a 6 repositorios anclados.
 
-### Usage
+### Uso
 
-Copy-paste this code into your readme and change the links.
+Copie y pegue este código en su archivo Léame y cambie los enlaces.
 
 Endpoint: `api/pin?username=SrGobi&repo=github-readme-stats`
 
@@ -151,19 +151,19 @@ Endpoint: `api/pin?username=SrGobi&repo=github-readme-stats`
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=SrGobi&repo=github-readme-stats)](https://github.com/SrGobi/github-readme-stats)
 
-Use [show_owner](#customization) variable to include the repo's owner username
+Use [show_owner](#personalización) variable para incluir el nombre de usuario del propietario del repositorio
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=SrGobi&repo=github-readme-stats&show_owner=true)](https://github.com/SrGobi/github-readme-stats)
 
-# Top Languages Card
+# Tarjeta de idiomas principales
 
-The top languages card shows a GitHub user's top languages which have used the most.
+La tarjeta de idiomas principales muestra los idiomas principales de un usuario de GitHub que más se han utilizado.
 
-_NOTE: Top Languages does not indicate my skill level or anything like that, it's a GitHub metric of which languages have the most code on GitHub. It's a new feature of github-readme-stats._
+_NOTA: Top Languages no indica mi nivel de habilidad ni nada por el estilo, es una métrica de GitHub de qué idiomas tienen más código en GitHub. Es una nueva característica de github-readme-stats._
 
-### Usage
+### Uso
 
-Copy-paste this code into your readme and change the links.
+Copie y pegue este código en su archivo Léame y cambie los enlaces.
 
 Endpoint: `api/top-langs?username=SrGobi`
 
@@ -171,9 +171,9 @@ Endpoint: `api/top-langs?username=SrGobi`
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SrGobi)](https://github.com/SrGobi/github-readme-stats)
 ```
 
-### Exclude individual repositories
+### Excluir repositorios individuales
 
-You can use `?exclude_repo=repo1,repo2` parameter to exclude individual repositories.
+Puedes usar `?exclude_repo=repo1,repo2` parámetro para excluir repositorios individuales.
 
 ```md
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SrGobi&exclude_repo=github-readme-stats,SrGobi.github.io)](https://github.com/SrGobi/github-readme-stats)
@@ -187,17 +187,17 @@ You can use `?hide=language1,language2` parameter to hide individual languages.
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SrGobi&hide=javascript,html)](https://github.com/SrGobi/github-readme-stats)
 ```
 
-### Show more languages
+### Mostrar más idiomas
 
-You can use the `&langs_count=` option to increase or decrease the number of languages shown on the card. Valid values are integers between 1 and 10 (inclusive), and the default is 5.
+Puedes usar el `&langs_count=` opción para aumentar o disminuir el número de idiomas que se muestran en la tarjeta. Los valores válidos son números enteros entre 1 y 10 (inclusive) y el valor predeterminado es 5.
 
 ```md
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SrGobi&langs_count=8)](https://github.com/SrGobi/github-readme-stats)
 ```
 
-### Compact Language Card Layout
+### Diseño de tarjeta de idioma compacto
 
-You can use the `&layout=compact` option to change the card design.
+Puede utilizar la opción `& layout = compact` para cambiar el diseño de la tarjeta.
 
 ```md
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SrGobi&layout=compact)](https://github.com/SrGobi/github-readme-stats)
@@ -207,13 +207,13 @@ You can use the `&layout=compact` option to change the card design.
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SrGobi)](https://github.com/SrGobi/github-readme-stats)
 
-- Compact layout
+- Disposición compacta
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SrGobi&layout=compact)](https://github.com/SrGobi/github-readme-stats)
 
-# Wakatime Week Stats
+# Estadísticas de la semana de Wakatime
 
-Change the `?username=` value to your [Wakatime](https://wakatime.com) username.
+Cambie el valor `? Username =` por su [Wakatime](https://wakatime.com) username.
 
 ```md
 [![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod)](https://github.com/SrGobi/github-readme-stats)
@@ -225,65 +225,65 @@ Change the `?username=` value to your [Wakatime](https://wakatime.com) username.
 
 [![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod&hide_progress=true)](https://github.com/SrGobi/github-readme-stats)
 
-- Compact layout
+- Disposición compacta
 
 [![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod&layout=compact)](https://github.com/SrGobi/github-readme-stats)
 
 ---
 
-### All Demos
+### Todas las demostraciones
 
-- Default
+- Defecto
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=SrGobi)
+![SrGobi's GitHub stats](https://github-readme-stats.vercel.app/api?username=SrGobi)
 
-- Hiding specific stats
+- Ocultar estadísticas específicas
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=SrGobi&hide=contribs,issues)
+![SrGobi's GitHub stats](https://github-readme-stats.vercel.app/api?username=SrGobi&hide=contribs,issues)
 
-- Showing icons
+- Mostrando iconos
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=SrGobi&hide=issues&show_icons=true)
+![SrGobi's GitHub stats](https://github-readme-stats.vercel.app/api?username=SrGobi&hide=issues&show_icons=true)
 
-- Include All Commits
+- Incluir todas las confirmaciones
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=SrGobi&include_all_commits=true)
+![SrGobi's GitHub stats](https://github-readme-stats.vercel.app/api?username=SrGobi&include_all_commits=true)
 
-- Themes
+- Temas
 
-Choose from any of the [default themes](#themes)
+Elija entre cualquiera de los [default themes](#temas)
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=SrGobi&show_icons=true&theme=radical)
+![SrGobi's GitHub stats](https://github-readme-stats.vercel.app/api?username=SrGobi&show_icons=true&theme=radical)
 
-- Gradient
+- Degradado
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=SrGobi&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
+![SrGobi's GitHub stats](https://github-readme-stats.vercel.app/api?username=SrGobi&bg_color=30,e96443,904e95&title_color=fff&text_color=fff)
 
-- Customizing stats card
+- Personalizar la tarjeta de estadísticas
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api/?username=SrGobi&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
+![SrGobi's GitHub stats](https://github-readme-stats.vercel.app/api/?username=SrGobi&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)
 
-- Setting card locale
+- Configuración de la configuración regional de la tarjeta
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api/?username=SrGobi&locale=es)
+![SrGobi's GitHub stats](https://github-readme-stats.vercel.app/api/?username=SrGobi&locale=es)
 
-- Customizing repo card
+- Personalización de la tarjeta de repositorio
 
 ![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=SrGobi&repo=github-readme-stats&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515)
 
-- Top languages
+- Idiomas principales
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SrGobi)](https://github.com/SrGobi/github-readme-stats)
 
-- Wakatime card
+- Tarjeta de Wakatime
 
 [![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod)](https://github.com/SrGobi/github-readme-stats)
 
 ---
 
-### Quick Tip (Align The Repo Cards)
+### Sugerencia rápida (alinear las tarjetas de repositorio)
 
-You usually won't be able to layout the images side by side. To do that you can use this approach:
+Por lo general, no podrá diseñar las imágenes una al lado de la otra. Para hacer eso, puede utilizar este enfoque:
 
 ```md
 <a href="https://github.com/SrGobi/github-readme-stats">
@@ -294,20 +294,20 @@ You usually won't be able to layout the images side by side. To do that you can 
 </a>
 ```
 
-## :sparkling_heart: Support the project
+## :sparkling_heart: Apoya el proyecto
 
-I open-source almost everything I can, and I try to reply to everyone needing help using these projects. Obviously,
-this takes time. You can use this service for free.
+Utilizo código abierto en casi todo lo que puedo y trato de responder a todos los que necesitan ayuda para usar estos proyectos. Obviamente,
+esto lleva tiempo. Puede utilizar este servicio de forma gratuita.
 
-However, if you are using this project and happy with it or just want to encourage me to continue creating stuff, there are few ways you can do it :-
+Sin embargo, si está utilizando este proyecto y está satisfecho con él o simplemente quiere animarme a seguir creando cosas, hay algunas formas de hacerlo. :-
 
-- Giving proper credit when you use github-readme-stats on your readme, linking back to it :D
-- Starring and sharing the project :rocket:
+- Dar el crédito adecuado cuando usa github-readme-stats en su archivo Léame, vinculándolo de nuevo :D
+- Protagonizar y compartir el proyecto :rocket:
 
-Thanks! :heart:
+Gracias! :heart:
 
 ---
 
-Contributions are welcome! <3
+Las contribuciones son bienvenidas! <3
 
-Made with :heart: and JavaScript.
+Hecho con :heart: y JavaScript.
