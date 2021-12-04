@@ -277,7 +277,7 @@ Elija entre cualquiera de los [default themes](#temas)
 
 - Tarjeta de Wakatime
 
-[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod)](https://github.com/SrGobi/github-readme-stats)
+[![SrGobi wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=srgobi)](https://github.com/SrGobi/github-readme-stats)
 
 ---
 
