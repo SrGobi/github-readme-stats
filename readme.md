@@ -216,18 +216,18 @@ Puede utilizar la opción `& layout = compact` para cambiar el diseño de la tar
 Cambie el valor `? Username =` por su [Wakatime](https://wakatime.com) username.
 
 ```md
-[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod)](https://github.com/SrGobi/github-readme-stats)
+[![SrGobi's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=srgobi)](https://github.com/SrGobi/github-readme-stats)
 ```
 
 ### Demo
 
-[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod)](https://github.com/SrGobi/github-readme-stats)
+[![SrGobi's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=srgobi)](https://github.com/SrGobi/github-readme-stats)
 
-[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod&hide_progress=true)](https://github.com/SrGobi/github-readme-stats)
+[![SrGobi's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=srgobi&hide_progress=true)](https://github.com/SrGobi/github-readme-stats)
 
 - Disposición compacta
 
-[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=willianrod&layout=compact)](https://github.com/SrGobi/github-readme-stats)
+[![SrGobi's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=srgobi&layout=compact)](https://github.com/SrGobi/github-readme-stats)
 
 ---
 
